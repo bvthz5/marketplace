@@ -1,0 +1,43 @@
+.productcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    margin-top: 10px;
+    padding-left: 10px;
+    min-height: 120px;
+}
+
+.product:hover {
+    background-color: #cde9ed45;
+
+}
+
+.imagealign {
+    height: 100px;
+}
+
+.image {
+    width: 175px;
+    height: 100px;
+    object-fit: contain;
+    display: unset;
+}
+
+.productdetaildiv {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.productdetails {
+    margin-top: 5px;
+}
+
+.noorder{
+    margin-left: 20px;
+    margin-top: 10px;
+}

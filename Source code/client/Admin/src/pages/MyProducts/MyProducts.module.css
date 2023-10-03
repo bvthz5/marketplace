@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+.h3design {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: none !important;
+  font-size: 13px;
+  width: 100%;
+  color: black;
+  text-align: left;
+}
+
+.productcontaineralign {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.data-card:hover {
+  transform: scale(1.01);
+}
+
+.data-card {
+  margin-bottom: -20px;
+  overflow: hidden;
+  border-radius: 0.5em;
+  border: 1px solid #c5c4c4aa;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 15%);
+  text-decoration: none;
+  background: white;
+  transition: transform 0.45s ease, background 0.45s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.data-card h3 {
+  color: #2e3c40;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin: 0 0 0.142857143em;
+  border-bottom: 2px solid #008296;
+  transition: color 0.45s ease, border 0.45s ease;
+  align-items: flex-start;
+}
+.data-card h4 {
+  color: #627084;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.777777778em;
+  transition: color 0.45s ease;
+}
+.data-card p {
+  opacity: 0;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0 0 1.25em;
+  transform: translateY(-1em);
+  transition: opacity 0.45s ease, transform 0.5s ease;
+}
+.data-card .link-text {
+  display: block;
+  color: #000000;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: auto 0 0;
+  transition: color 0.45s ease;
+}
+.data-card .link-text svg {
+  margin-left: 0.5em;
+  transition: transform 0.6s ease;
+}
+.data-card .link-text svg path {
+  transition: fill 0.45s ease;
+}
+.data-card:hover h3 {
+  color: rgb(0, 0, 0);
+  border-bottom-color: #002f34;
+}
+.data-card:hover h4 {
+  color: rgb(0, 0, 0);
+}
+.data-card:hover p {
+  opacity: 1;
+  color: rgb(0, 0, 0);
+
+  transform: none;
+}
+.data-card:hover .link-text {
+  color: #fff;
+}
+.data-card:hover .link-text svg {
+  animation: point 1.25s infinite alternate;
+}
+.data-card:hover .link-text svg path {
+  fill: #fff;
+}
+.datas {
+  max-width: 100%;
+  min-width: 50%;
+  max-height: 90%;
+  height: 70%;
+  position: relative;
+}
+.image {
+  width: 200px;
+  height: 56px;
+  object-fit: contain;
+  display: unset;
+}
+.datamain {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.forButton {
+  width: 100%;
+  height: 1%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0%;
+  max-width: 90%;
+  max-height: 20%;
+  min-width: 50%;
+}
+.fordata {
+  width: 20%;
+  height: 2%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.forprice {
+  width: 15%;
+  height: 2%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 13px;
+  color: black;
+}
+.categorydesign {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+ 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: none !important;
+  font-size: 13px;
+  color: rgba(13, 13, 13, 0.601);
+}
+.aligninfo {
+  min-width:140px;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 13px;
+}
+.Title {
+  margin-left: 80px;
+  font-size: 26px;
+  color: #c7c7f7;
+}
+.imagealign {
+  height: 70px;
+  width: 20%;
+}
+.logged-in {
+  color: green;
+}
+.logged-sold {
+  color: blue;
+}
+.logged-out {
+  color: red;
+}
+.logged-rejected {
+  color: #660000a9;
+}
+.logged-pending {
+  color: orange;
+}
+
+.css-o8gtrk-MuiGrid2-root {
+  margin: unset !important;
+}
+.counts {
+  margin-left: 10px;
+}
+.noprductsfound {
+  margin-top: 20px;
+}
+.cardcountmain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+  .datamain {
+    flex-direction: column;
+  }
+  .fordata {
+    width: 100%;
+  }
+  .forprice {
+    width: 100%;
+  }
+  .categorydesign {
+    width: 100%;
+  }
+  .aligninfo {
+    width: 100%;
+  }
+  .counts {
+    margin-left: 14px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .imagealign {
+    width: 40%;
+  }
+  .datamain {
+    flex-direction: column;
+    width: 50%;
+  }
+  .fordata {
+    width: 100%;
+  }
+  .forprice {
+    width: 100%;
+  }
+  .categorydesign {
+    width: 100%;
+  }
+  .aligninfo {
+    width: 100%;
+  }
+  .counts {
+    margin-left: 20px;
+  }
+  .cardcountmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cardcount {
+    width: 95% !important;
+    height: 160px;
+  }
+}

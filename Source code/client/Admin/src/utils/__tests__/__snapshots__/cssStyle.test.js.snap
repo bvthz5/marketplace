@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`styles bgBlur returns expected styles 1`] = `
+Object {
+  "&:before": Object {
+    "WebkitBackdropFilter": "blur(10px)",
+    "backdropFilter": "blur(10px)",
+    "backgroundColor": "rgba(255, 0, 0, 0.5)",
+    "content": "\\"\\"",
+    "height": "100%",
+    "left": 0,
+    "position": "absolute",
+    "top": 0,
+    "width": "100%",
+    "zIndex": 9,
+  },
+  "backgroundImage": "url(https://example.com/image.jpg)",
+  "position": "relative",
+}
+`;
+
+exports[`styles bgGradient returns expected styles 1`] = `
+Object {
+  "background": "linear-gradient(to top, #ff0000, #00ff00), url(https://example.com/image.jpg)",
+  "backgroundPosition": "center center",
+  "backgroundRepeat": "no-repeat",
+  "backgroundSize": "cover",
+}
+`;
+
+exports[`styles filterStyles returns expected styles 1`] = `
+Object {
+  "MozFilter": "blur(10px) grayscale(50%)",
+  "WebkitFilter": "blur(10px) grayscale(50%)",
+  "filter": "blur(10px) grayscale(50%)",
+}
+`;
+
+exports[`styles hideScrollbarX returns expected styles 1`] = `
+Object {
+  "&::-webkit-scrollbar": Object {
+    "display": "none",
+  },
+  "msOverflowStyle": "none",
+  "overflowX": "scroll",
+  "scrollbarWidth": "none",
+}
+`;
+
+exports[`styles hideScrollbarY returns expected styles 1`] = `
+Object {
+  "&::-webkit-scrollbar": Object {
+    "display": "none",
+  },
+  "msOverflowStyle": "none",
+  "overflowY": "scroll",
+  "scrollbarWidth": "none",
+}
+`;
+
+exports[`styles textGradient returns expected styles 1`] = `
+Object {
+  "WebkitBackgroundClip": "text",
+  "WebkitTextFillColor": "transparent",
+  "background": "-webkit-linear-gradient(red, blue)",
+}
+`;

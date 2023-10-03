@@ -1,0 +1,11 @@
+.main{
+  
+    display: grid;
+    place-items: center;
+    margin-top: 200px;
+    margin-left: 0px;
+}
+.second{
+    display: flex;
+    place-items: center;
+}

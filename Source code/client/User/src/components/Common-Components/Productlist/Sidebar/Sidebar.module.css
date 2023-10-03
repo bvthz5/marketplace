@@ -1,0 +1,121 @@
+.sidebarContainer {
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.categoryDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.categorySelect {
+    background-color: #002f34;
+    color: white;
+    padding: 10px;
+    margin-top: 2px;
+    width: 90%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.priceFilter-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.sliderDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.priceInput-div {
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 90%;
+}
+
+.price-input {
+    background-color: #002f34;
+    color: white;
+    padding: 5px;
+    padding-left: 15px;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 35%;
+    height: 20px;
+}
+
+.error {
+    display: flex;
+    flex-direction: row;
+    color: red;
+    justify-content: center;
+    font-size: 14px;
+    width: 87%;
+}
+
+.applyBtn-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+}
+
+.applyButton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #002f34;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 5px;
+    width: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.applyButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.applyButton span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.applyButton:hover span {
+    padding-right: 15px;
+}
+
+.applyButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.clearBtn-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

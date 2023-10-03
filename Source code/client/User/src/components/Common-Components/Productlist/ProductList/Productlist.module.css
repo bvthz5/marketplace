@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+
+.Title {
+  margin-left: 80px;
+  font-size: 26px;
+  color: #008296;
+  margin-top: 70px;
+}
+
+.bannerframe {
+  background-color: #002f34;
+}
+
+.each-slide-effect>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 188px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.banner {
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  position: relative;
+  top: 20px;
+  overflow: hidden;
+}
+
+.react-slideshow-container .nav {
+  z-index: unset !important;
+  position: absolute;
+  cursor: pointer;
+}
+
+.box1 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+  background-color: #e9e9e9;
+
+}
+
+.box2 {
+  width: 100%;
+  position: relative;
+}
+
+.boxproductlist {
+  display: flex;
+}
+
+.categorybox {
+  margin: 8px 16px 0 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.categorybox1 {
+  width: 304px;
+  border-radius: 3px;
+  position: relative;
+  height: 100%;
+}
+
+
+.productbox {
+  width: 100%;
+  margin-top: 8px;
+  display: block;
+  height: auto;
+  overflow: hidden;
+  min-height: 80vh;
+}
+
+.list-card {
+  width: 275px !important;
+}
+
+.data-card {
+  overflow: hidden;
+  border-radius: 0.5em;
+  text-decoration: none;
+  background: white;
+  box-shadow: 0 1.5em 2 5em -0.5em rgba(0, 0, 0, 0.1);
+  transition: transform 0.45s ease, background 0.45s ease;
+}
+
+.data-card h3 {
+  color: #2e3c40;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin: 0 0 0.142857143em;
+  border-bottom: 2px solid#008296;
+  transition: color 0.45s ease, border 0.45s ease;
+  align-items: flex-start;
+}
+
+.data-card h4 {
+  color: #627084;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.777777778em;
+  transition: color 0.45s ease;
+}
+
+.data-card .link-text {
+  display: block;
+  color: #000000;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: auto 0 0;
+  transition: color 0.45s ease;
+}
+
+.data-card .link-text svg {
+  margin-left: 0.5em;
+  transition: transform 0.6s ease;
+}
+
+.data-card .link-text svg path {
+  transition: fill 0.45s ease;
+}
+
+.data-card:hover {
+  background: #d1dee3;
+  transform: scale(1.02);
+}
+
+.data-card:hover h3 {
+  color: rgb(0, 0, 0);
+  border-bottom-color: #002f34;
+}
+
+.data-card:hover h4 {
+  color: rgb(0, 0, 0);
+}
+
+.data-card:hover p {
+  opacity: 1;
+  color: rgb(0, 0, 0);
+
+  transform: none;
+}
+
+.data-card:hover .link-text {
+  color: #fff;
+}
+
+.data-card:hover .link-text svg {
+  animation: point 1.25s infinite alternate;
+}
+
+.data-card:hover .link-text svg path {
+  fill: #fff;
+}
+
+.likebutton {
+  border: none;
+  position: relative;
+  display: flex;
+  top: 5;
+  width: 100%;
+  justify-content:flex-end;
+}
+
+.datas {
+  max-width: 100%;
+  min-width: 50%;
+  height: 130px;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+  max-width: inherit;
+  cursor: pointer;
+}
+
+.fontsize {
+  text-align: left;
+  margin-top: 45px;
+  margin-left: 10px;
+}
+
+
+.productname {
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+@keyframes point {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0.125em);
+  }
+}
+ul {
+  padding: 0 !important;
+  margin-top: 6px !important;
+  margin-bottom: 0px !important;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+  .boxproductlist {
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 468px) {
+  .list-card {
+    width: 100% !important;
+  }
+}

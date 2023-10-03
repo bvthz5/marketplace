@@ -1,0 +1,174 @@
+.addproductbackground {
+  margin: 0px auto;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  place-items: center;
+  margin-top: 68px;
+  flex-wrap: wrap;
+}
+
+.boxaddproduct {
+  margin-top: 20px;
+  text-align: center;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px 5px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.backicondiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.backicon {
+  position: relative;
+  color: #002f34;
+  top: 0;
+  left: 0;
+}
+
+.form {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.rows {
+  min-height: 92px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+.inputs {
+  display: block;
+  height: 10px;
+  width: 330px;
+  text-align: left;
+  margin: 15px auto 0px auto;
+  padding: 14px 10px;
+  border: 1px solid #00a49f;
+  border-radius: 2px;
+  color: #101010;
+  background: #ffffff;
+  outline: none;
+  transition: 0.25s;
+}
+
+.category {
+  padding: 8px 10px;
+  width: 350px;
+  height: 40px;
+}
+
+.categoryoption {
+  text-align: left;
+  width: 100%;
+}
+
+
+.txtrow {
+  min-height: 232px;
+}
+
+.txtarea {
+  min-width: 330px;
+  min-height: 150px;
+}
+
+.required {
+  color: #e3163b;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background: #002f34;
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 38px;
+  border-radius: 2px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.input-suggestion {
+  position: relative;
+  width: 350px;
+  height: auto;
+  min-height: 60px;
+  background-color: white;
+  border-bottom: 1px black dotted;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: black;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+  .boxaddproduct {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .rows {
+    width: 95%;
+  }
+
+  .inputs {
+    width: 90%;
+  }
+
+  .txtarea {
+    min-width: 100px;
+    width: 90%;
+  }
+
+  .category {
+    width: 97%;
+  }
+
+  .button {
+    width: 90%;
+  }
+
+  .input-suggestion {
+    width: 96%;
+    margin-left: 7px;
+  }
+}

@@ -1,0 +1,100 @@
+.userContainer {
+  background: rgb(250, 250, 250);
+  height: 500px;
+  margin-left: 600px;
+  margin-top: 120px;
+  width: 350px;
+  position: relative;
+  place-items: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  word-break: break-all;
+  border-radius: 4px;
+  overflow-y: scroll;
+  -webkit-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.3);
+}
+.userContent {
+  width: 93%;
+  margin-bottom: 8%;
+  text-align: left;
+}
+.h2 {
+  color: #43434a;
+  width: 90%;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.close {
+  color: rgb(0, 0, 0);
+  float: left;
+  font-size: 150%;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 80%;
+  margin-top: 5%;
+}
+.h3 {
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+.imgstyle {
+  width: 140px;
+  height: 140px;
+  font-size: 80px;
+}
+.imgdiv {
+  margin-top: 10px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.closeicon {
+  display: flex;
+  justify-content: end;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  box-sizing: border-box;
+}
+
+.card-container {
+  background-color: #231e39;
+  padding: 15px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding-top: 20px;
+  position: relative;
+  min-width: 400px;
+  max-width: 700px;
+  max-height: 700px;
+  text-align: center;
+  word-break: break-all;
+  overflow-y: auto;
+}
+
+.card-container .pro {
+  color: #231e39;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card-container .round {
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
+}

@@ -1,0 +1,196 @@
+.data-card {
+    overflow: hidden;
+    border-radius: 0.5em;
+    border: 1px solid #c5c4c4aa;
+    box-shadow: 0 0 0 0 rgb(0 0 0 / 15%);
+    text-decoration: none;
+    background: white;
+    transition: transform 0.45s ease, background 0.45s ease;
+    width: 100%;
+  }
+  
+  .data-card h3 {
+    color: #2e3c40;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 0.5em;
+    margin: 0 0 0.142857143em;
+    border-bottom: 2px solid #008296;
+    transition: color 0.45s ease, border 0.45s ease;
+    align-items: flex-start;
+  }
+  
+  .data-card h4 {
+    color: #627084;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+  
+    transition: color 0.45s ease;
+  }
+  
+  .data-card p {
+    opacity: 0;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 0 0 1.25em;
+    transform: translateY(-1em);
+    transition: opacity 0.45s ease, transform 0.5s ease;
+  }
+  
+  .data-card .link-text {
+    display: block;
+    color: #000000;
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: auto 0 0;
+    transition: color 0.45s ease;
+  }
+  
+  .data-card .link-text svg {
+    margin-left: 0.5em;
+    transition: transform 0.6s ease;
+  }
+  
+  .data-card .link-text svg path {
+    transition: fill 0.45s ease;
+  }
+  
+  /* .data-card:hover {
+      background: #d1dee3;
+      transform: scale(1.02);
+    } */
+  .data-card:hover h3 {
+    color: rgb(0, 0, 0);
+    border-bottom-color: #002f34;
+  }
+  
+  .data-card:hover h4 {
+    color: rgb(0, 0, 0);
+  }
+  
+  .data-card:hover p {
+    opacity: 1;
+    color: rgb(0, 0, 0);
+  
+    transform: none;
+  }
+  
+  .data-card:hover .link-text {
+    color: #fff;
+  }
+  
+  .data-card:hover .link-text svg {
+    animation: point 1.25s infinite alternate;
+  }
+  
+  .data-card:hover .link-text svg path {
+    fill: #fff;
+  }
+  
+  .imagealign {
+    height: 70px;
+    width: 30%;
+  }
+  
+  .image {
+    width: 200px;
+    height: 152px;
+    object-fit: contain;
+    display: unset;
+  }
+  
+  .datadiv {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-left: 15px;
+  }
+  
+  .fordata {
+    font-size: 16px;
+    text-align: left;
+    height: 25px;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    max-width: 500px;
+    overflow: hidden;
+    width: 100%;
+    min-width: 35vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .categorydesign {
+    width: 100%;
+    margin-bottom: none !important;
+    font-size: 14px;
+  
+    text-align: left;
+  }
+  
+  .forprice {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 2px;
+    font-size: 20px;
+    color: black;
+    text-align: left;
+  }
+  
+  .sellerdetails {
+    height: 90%;
+    border: 1px solid #d5d9d9;
+    width: 200px;
+    margin-left: 10px;
+  }
+  
+  .sellerd {
+    text-align: left;
+    width: 100%;
+    margin-top: 4px;
+    margin-top: 20px;
+    word-break: break-all;
+  }
+  
+  .h4 {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: color 0.45s ease;
+    color: #4295de;
+    width: 100%;
+  }
+  
+  .width {
+    width: 100%;
+  }
+  
+  .reasonTitle {
+    color: #4295de;
+    font-weight: 200;
+  }
+  
+  .cancelReason {
+    text-align: start;
+    width: 100%;
+    word-break: break-all;
+    color: gray;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .width {
+      word-break: break-all;
+    }
+  }
+  

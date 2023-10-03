@@ -1,0 +1,208 @@
+.TableContainer {
+    align-items: center;
+    width: 100%;
+  }
+  .TableCell {
+    width: 10px;
+  }
+  .TableHead {
+    color: #f0ec0b;
+    background-color: #002f34;
+  }
+  .bn49 {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 12px;
+    margin: 7px;
+    color: #ffffff;
+    background-color:  #4B4453;
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: box-shadow 200ms ease-out;
+  }
+  .button-55 {
+    border: 0;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0);
+   }
+  .edit {
+    background-color: #ffffff;
+  }
+  .addcategorybutton {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #4B4453;
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .entercategorybutton {
+    margin-left: 80px;
+    margin-bottom: 20px;
+  }
+  .inputfield {
+    margin-left: 5px;
+    border-radius: 8px;
+  }
+  .submitbutton {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #002f34;
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  .chat2 {
+    fill: #ffffff;
+  }
+  .tablehead {
+    color: #002f34;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: serif;
+  }
+  .container {
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 16%; /* Location of the box */
+    left: 0;
+    /* border-radius: 2%; */
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(4, 4, 4, 0.4); /* Black w/ opacity */
+    place-items: center;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 38%;
+    /* text-align: justify; */
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    width: 15%;
+    height: 230px;
+    background: #ffffff;  
+  }
+
+  
+  .close {
+    color: rgb(0, 0, 0);
+    float: right;
+  
+    font-size: 150%;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 100%;
+    margin-bottom: 15%;
+  }
+  .content {
+    margin-bottom: 5%;
+  }
+  .boxproductlist {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .productbox {
+    width: 100%;
+    margin-top: -20px;
+    border-radius: 15px;
+    display: block;
+    min-height: 70vh;
+  }
+  .addcategorytext {
+    align-items: baseline;
+  }
+  
+  .row:hover{
+  
+    background-color: #cde9ed45;
+
+  }
+
+  .listloader{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    left: 440px;
+    height: 40px;
+  }
+  .paginationdiv {
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .pagination {
+    align-items: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    position: relative;
+  }
+  .paginationjustify {
+    justify-content: center;
+  }
+  .page-item {
+    color: #43434a;
+    float: left;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .page-link {
+    color: #43434a;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    /* border: 1px solid #002f34; */
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .page-active {
+    color: #008296;
+    float: left;
+    padding: 4px 2px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #e6e6e6;
+    height: 45px;
+    width: 45px;
+  }
+  .page-prev-disabled {
+    cursor: default;
+  }

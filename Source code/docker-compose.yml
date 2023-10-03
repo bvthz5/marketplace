@@ -1,0 +1,88 @@
+version: "3.8"
+services:
+  # SQL Server container
+  mssql_2019:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Admin@1234
+    ports:
+      - '1434:1433' # Map host port 1434 to container port 1433 for SQL Server
+    container_name: mssql_2019
+    hostname: mssql_2019
+    networks:
+      - marketplace_network
+
+  # Admin API container
+  marketplace_dev_admin_api:
+    build:
+      context: "./server"
+      dockerfile: "./Admin/MarketPlaceAdmin.Api/Dockerfile"
+    ports:
+      - '8000:443' # Map host port 8000 to container port 443 for HTTPS
+      - '8001:80' # Map host port 8001 to container port 80 for HTTP
+    environment:
+      - ASPNETCORE_HTTP_PORT=https://+:443
+      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_ENVIRONMENT=DockerDevelopment
+      - ConnectionStrings__Default=Server=mssql_2019,1433;Database=Marketplace_Phase3;User Id=sa;password=Admin@1234;Trusted_Connection=False;MultipleActiveResultSets=true;TrustServerCertificate=true
+      # Set environment variables for the Admin API container
+    container_name: marketplace_dev_admin_api
+    depends_on:
+      - mssql_2019 # Depend on the mssql_2019 service to ensure it is started first
+    networks:
+      - marketplace_network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:80/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: on-failure:3 # Restart up to 3 times on failure
+
+  # User API container
+  marketplace_dev_user_api:
+    build:
+      context: "./server"
+      dockerfile: ./User/MarketPlaceUser.Api/Dockerfile
+    ports:
+      - '8005:443' # Map host port 8005 to container port 443 for HTTPS
+      - '8006:80' # Map host port 8006 to container port 80 for HTTP
+    environment:
+      - ASPNETCORE_HTTP_PORT=https://+:443
+      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_ENVIRONMENT=DockerDevelopment
+      - ConnectionStrings__Default=Server=mssql_2019,1433;Database=Marketplace_Phase3;User Id=sa;password=Admin@1234;Trusted_Connection=False;MultipleActiveResultSets=true;TrustServerCertificate=true
+      # Set environment variables for the User API container
+    container_name: marketplace_dev_user_api
+    depends_on:
+      marketplace_dev_admin_api:
+        condition: service_healthy # Depend on the health check result of marketplace_dev_admin_api
+    networks:
+      - marketplace_network
+    restart: on-failure:3 # Restart up to 3 times on failure
+
+  # Admin UI container
+  marketplace_dev_admin_ui:
+    build:
+      context: "./client/Admin"
+      dockerfile: Dockerfile.dev
+    ports:
+      - '3000:80' # Map host port 3000 to container port 80 for HTTP
+    container_name: marketplace_dev_admin_ui
+    networks:
+      - marketplace_network
+
+  # User UI container
+  marketplace_dev_user_ui:
+    build:
+      context: "./client/User"
+      dockerfile: Dockerfile.dev
+    ports:
+      - '3001:80' # Map host port 3001 to container port 80 for HTTP
+    container_name: marketplace_dev_user_ui
+    networks:
+      - marketplace_network
+
+networks:
+  marketplace_network: # Define the network for the containers to communicate with each other

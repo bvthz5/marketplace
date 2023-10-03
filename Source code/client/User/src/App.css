@@ -1,0 +1,192 @@
+/* Set the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Set the background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Set the color and rounded corners of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888888cc;
+  border-radius: 5px;
+  width: 10px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 8px;
+
+}
+
+/* Increase width of scrollbar and scrollbar thumb on track hover */
+::-webkit-scrollbar-track:hover {
+  width: 8px;
+}
+
+/* Set the color and rounded corners of the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  width: 8px;
+}
+
+
+.App {
+  text-align: center;
+
+}
+
+.css-x15wq9 {
+  width: 0px !important;
+}
+
+.slick-track {
+  height: 100%;
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.detailview-imagecontainer {
+  width: 100%;
+}
+
+.detailview-imagecontainer .slick-slide div {
+  height: 370px;
+}
+
+.detailview-modalimagecontainer {
+  width: 90%;
+}
+
+.detailview-modalimagecontainer .slick-slide div {
+  height: 90%;
+}
+
+.slick-dots {
+  bottom: 0px !important;
+  position: relative !important;
+}
+
+.slick-dots li {
+  padding: 0px !important;
+  width: 46px !important;
+  height: 0px !important;
+}
+
+.slick-dots li img {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain;
+  border: 1px solid black;
+}
+
+.slick-dots .slick-active img {
+  border: 3px solid #3f71d7;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 25px !important;
+}
+
+.element {
+  height: 50px;
+  border: 3px solid #3f71d7;
+}
+
+.slick-slide img {
+  object-fit: contain;
+  max-width: inherit;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.login_container__PDg0d {
+  z-index: 999;
+}
+
+
+
+* {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+textarea {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  resize: none;
+
+}
+
+input {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  border: solid 1px #eee;
+
+}
+
+input:disabled {
+  cursor: not-allowed;
+
+}
+
+select {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+option {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+li {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+
+
+ul {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+p {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+table {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+head {
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}

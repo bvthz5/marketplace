@@ -1,0 +1,148 @@
+.container {
+    max-width: 350px;
+    min-width: 350px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 25px 5px 0px;
+}
+
+.clearbtn {
+    border: none;
+    outline: none;
+    background: 0;
+    color: rgb(49 137 210);
+    width: 60px;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.clearbtn:hover {
+    text-decoration: underline;
+}
+
+.notifyboxhead {
+    display: flex;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    margin-top: 3px;
+    margin-bottom: 5px;
+
+}
+
+.notifybox {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: 15px 20px 10px 10px;
+
+}
+
+.notifybox:hover {
+    background-color: #cde9ed45;
+
+}
+
+
+
+.imagediv {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 5px;
+}
+
+.image {
+    width: 25px;
+    height: 25px;
+}
+
+.labelfont {
+    font-size: medium;
+    margin: 5px;
+}
+
+
+.deletebtndiv {
+    width: 0px;
+}
+
+.deletebtn {
+    position: relative;
+    right: 6px;
+    visibility: hidden;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.notifybox:hover .deletebtn {
+    visibility: visible;
+}
+
+
+.notificationbox {
+    flex-grow: 1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-break: break-word;
+    font-size: 14px;
+    font-weight: bold;
+    color: #002f34;
+}
+
+.productname {
+    max-width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: initial;
+}
+
+.nonotificationbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notificationboxdata {
+    display: flex;
+}
+
+.nonotificationhead {
+    margin: 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nonotificationboxspan {
+    font-size: 14px;
+    color: #002f34;
+}
+
+.ptagmsg {
+    color: rgba(0, 47, 52, .64);
+    font-size: 12px;
+}
+
+.nonotifyimg {
+    height: 120px;
+}
+
+.dateshow {
+    padding: 0;
+    margin: 0;
+    color: rgb(32 39 39 / 64%);
+    font-size: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,67 @@
+/* Absolute Center Spinner */
+.apiloader {
+    position: fixed;
+    z-index: 999;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Transparent Overlay */
+  .apiloader:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .load-row {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .load-row span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #4B4453;
+    border-radius: 50px;
+    animation: up-down6 0.5s ease-in infinite alternate;
+  }
+  
+  .load-row span:nth-child(2) {
+    background: #4b4453e5;
+    animation-delay: 0.16s;
+  }
+  
+  .load-row span:nth-child(3) {
+    background: #4b4453c7;
+    animation-delay: 0.32s;
+  }
+  
+  .load-row span:nth-child(4) {
+    background: #4b4453a3;
+    animation-delay: 0.48s;
+  }
+  
+  @keyframes up-down6 {
+    0% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(10px);
+    }
+  }
+   

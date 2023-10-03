@@ -1,0 +1,121 @@
+.button {
+    border: 0;
+    color: white;
+    padding: 9px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #002f34;
+}
+
+
+.modalcontainer {
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
+    padding-top: 16%;
+    /* Location of the box */
+    left: 0;
+    /* border-radius: 2%; */
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(255, 255, 255);
+    /* Fallback color */
+    background-color: rgba(4, 4, 4, 0.4);
+    /* Black w/ opacity */
+}
+
+.modalbox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    width: 380px;
+    height: 280px;
+    background: #ffffff;
+    border-radius: 25px;
+}
+
+.modalheading {
+    align-items: center;
+    background-color: #002f34;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 2px 5px 5px 5px;
+    color: white;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+}
+
+.modalhead {
+    position: relative;
+    bottom: 6px;
+
+}
+
+.formdiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+.modalinputfield {
+    width: 90%;
+    border-radius: 8px;
+    border-color: #00a49f;
+    padding-right: 10px !important;
+    padding-left: 10px;
+}
+
+.modalcancelButton {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    color: #000000;
+    background-color: #c7c7f7;
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    width: 250px
+}
+
+.modalsubmitbutton {
+    border: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #002f34;
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 250px
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+}

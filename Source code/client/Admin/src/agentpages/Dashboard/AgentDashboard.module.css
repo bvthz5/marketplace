@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+.cardcountmain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.cardcount:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.h3design {
+  margin-bottom: 0;
+  font-size: 13px;
+  color: black;
+  text-align: left;
+}
+
+.d {
+  color: rgb(83, 207, 74);
+}
+
+@media only screen and (max-width: 1200px) {
+  .cardcountmain {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .cardcountmain {
+    margin-left: 0px;
+  }
+  .datamain {
+    flex-direction: column;
+  }
+  .fordata {
+    width: 100%;
+  }
+  .forprice {
+    width: 100%;
+  }
+  .categorydesign {
+    width: 100%;
+  }
+  .aligninfo {
+    width: 100%;
+  }
+  .counts {
+    margin-left: 14px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .imagealign {
+    width: 40%;
+  }
+  .datamain {
+    flex-direction: column;
+    width: 50%;
+  }
+  .fordata {
+    width: 100%;
+  }
+  .forprice {
+    width: 100%;
+  }
+  .categorydesign {
+    width: 100%;
+  }
+  .aligninfo {
+    width: 100%;
+  }
+  .counts {
+    margin-left: 20px;
+  }
+  .cardcountmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cardcount {
+    width: 95% !important;
+    height: 160px;
+  }
+}

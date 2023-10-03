@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+.maindiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.productcardmaindiv {
+  width: 70%;
+}
+
+.h3design {
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  margin-bottom: none !important;
+  font-size: 18px;
+  margin-right: 505px;
+}
+
+.productcontaineralign {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.datas {
+  max-width: 100%;
+  min-width: 50%;
+  max-height: 90%;
+  height: 70%;
+  position: relative;
+}
+
+.forButton {
+  width: 100%;
+  height: 1%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0%;
+  max-width: 90%;
+  max-height: 20%;
+  min-width: 50%;
+}
+
+@keyframes point {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0.125em);
+  }
+}
+.button-13:hover {
+  background-color: #002f34;
+}
+
+.button-13:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.Title {
+  margin-left: 80px;
+  font-size: 26px;
+  color: #008296;
+}
+
+.logged-in {
+  color: green;
+}
+
+.logged-out {
+  color: red;
+}
+
+.logged-pending {
+  color: orange;
+}
+
+.aligninfo {
+  width: 24%;
+  margin-bottom: 4px;
+
+  margin-top: 2px;
+}
+
+.css-o8gtrk-MuiGrid2-root {
+  margin: unset !important;
+}
+
+.selleremail {
+  line-break: anywhere;
+}
+.aligninfobutton {
+  color: #54529b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 26px;
+}
+
+.h4head {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: color 0.45s ease;
+  color: #4295de;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d5d9d9;
+  padding: 10px;
+}
+
+.ordersummarybox {
+  overflow: hidden;
+  border-radius: 0.5em;
+  border: 1px solid #c5c4c4aa;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 15%);
+  text-decoration: none;
+  background: white;
+  transition: transform 0.45s ease, background 0.45s ease;
+  width: 100%;
+  height: auto;
+  min-height: 235px;
+}
+.asignbox {
+  overflow: hidden;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 15%);
+  text-decoration: none;
+  background: white;
+  transition: transform 0.45s ease, background 0.45s ease;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.asignbox:hover {
+  transform: translateY(-5px);
+  background: #f8f8f8;
+}
+
+.asignboxintransit {
+  overflow: hidden;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 15%);
+  text-decoration: none;
+  background: white;
+  transition: transform 0.45s ease, background 0.45s ease;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.otherdetails {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.buyersummarybox {
+  overflow: hidden;
+  border-radius: 0.5em;
+  border: 1px solid #c5c4c4aa;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 15%);
+  text-decoration: none;
+  background: white;
+  transition: transform 0.45s ease, background 0.45s ease;
+  margin-top: 15px;
+  height: auto;
+  width: 100%;
+  min-height: 235px;
+  display: flex;
+  flex-direction: column;
+}
+.detailshead {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: color 0.45s ease;
+  color: #4295de;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.addresshead {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  transition: color 0.45s ease;
+  color: #4295de;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.buyerfl {
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.45s ease;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  overflow: hidden;
+  word-break: break-all;
+}
+.paymentstatus {
+  color: #409063;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 22px;
+}
+
+.badge-danger {
+  background-color: red;
+
+  color: white;
+  padding: 0px 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-success {
+  background-color: green;
+  color: white;
+  padding: 0px 8px;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-info {
+  background-color: #0d6efd;
+  color: white;
+  padding: 0px 8px;
+  text-align: center;
+  border-radius: 5px;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: bold;
+}
+.buyername {
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.45s ease;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.buyerdetails {
+  padding-right: 20px;
+  word-break: break-all;
+}
+
+.totalprice {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #000000;
+  width: 30%;
+  transition: color 0.45s ease;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.paddingprice {
+  margin-top: 60px;
+  font-size: 16px;
+}
+
+.refundprice {
+  margin-top: 50px;
+  font-size: 16px;
+  color: red;
+  font-weight: 300;
+}
+
+.free {
+  margin-top: 10px;
+  color: #409063;
+}
+
+.othercharges {
+  margin-top: 10px;
+  color: #409063;
+}
+
+.divaddress {
+  line-break: anywhere;
+  width: 95%;
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+
+.buyerddress {
+  width: 90%;
+  margin-left: 16px;
+  height: auto;
+}
+.div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  width: 100%;
+}
+.divamount {
+  width: 30%;
+}
+.totaldiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.refunddiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.forassignFlex {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.orderStatusDiv {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 900px) {
+  .maindiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .otherdetails {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  .productcardmaindiv {
+    width: 100%;
+  }
+  .width {
+    word-break: break-all;
+  }
+  .orderStatusDiv {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  
+}

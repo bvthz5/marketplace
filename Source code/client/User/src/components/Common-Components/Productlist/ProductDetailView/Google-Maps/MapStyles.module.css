@@ -1,0 +1,40 @@
+.mapContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.suggestionlist{
+    border:1px solid black;
+}
+
+*{
+    margin:0;
+    padding:0;
+  }
+
+  .locationsearchinput{
+    width: 270px;
+    height: 40px;
+    background: none;
+    border: 1px solid #00a49f;
+    font-size: 1rem;
+    color: black;
+  
+  }
+  
+  .input-suggestion{
+    width: 330px;
+    height: auto;
+    min-height: 60px;
+    background-color: white;
+    border-bottom: 1px black dotted;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: black;
+    margin-left: 220px;
+  }
+
+  

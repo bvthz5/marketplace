@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "Marketplace_Dev_Admin_UI",
+        "projectKey": "Marketplace_Dev_Admin_UI"
+    }
+}

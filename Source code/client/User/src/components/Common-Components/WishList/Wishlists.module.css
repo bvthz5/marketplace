@@ -1,0 +1,220 @@
+.productcontaineralign {
+  display: flex;
+  justify-content: center;
+}
+
+.h3design {
+  overflow: hidden;
+  max-width: 220px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.productcontainer {
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  min-height: 100vh;
+  height: auto;
+  background: #edecec;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+
+.data-card h3 {
+  color: #2e3c40;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin: 0 0 0.142857143em;
+  border-bottom: 2px solid#008296;
+  transition: color 0.45s ease, border 0.45s ease;
+  align-items: flex-start;
+}
+
+.data-card h4 {
+  color: #627084;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.777777778em;
+  transition: color 0.45s ease;
+}
+
+.data-card .link-text {
+  display: block;
+  color: #000000;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: auto 0 0;
+  transition: color 0.45s ease;
+}
+
+.data-card .link-text svg {
+  margin-left: 0.5em;
+  transition: transform 0.6s ease;
+}
+
+.data-card .link-text svg path {
+  transition: fill 0.45s ease;
+}
+
+.data-card:hover {
+  background: #d1dee3;
+  transform: scale(1.02);
+}
+
+.data-card:hover h3 {
+  color: rgb(0, 0, 0);
+  border-bottom-color: #002f34;
+}
+
+.data-card:hover h4 {
+  color: rgb(0, 0, 0);
+}
+
+.data-card:hover p {
+  opacity: 1;
+  color: rgb(0, 0, 0);
+
+  transform: none;
+}
+
+.data-card:hover .link-text {
+  color: #fff;
+}
+
+.data-card:hover .link-text svg {
+  animation: point 1.25s infinite alternate;
+}
+
+.data-card:hover .link-text svg path {
+  fill: #fff;
+}
+
+@keyframes point {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0.125em);
+  }
+}
+
+.data-card {
+
+  overflow: hidden;
+  border-radius: 0.5em;
+  text-decoration: none;
+  background: white;
+  box-shadow: 0 1.5em 2 5em -0.5em rgba(0, 0, 0, 0.1);
+  transition: transform 0.45s ease, background 0.45s ease;
+}
+
+.datas {
+  max-width: 100%;
+  min-width: 50%;
+  max-height: 90%;
+  height: 70%;
+  position: relative;
+}
+
+.image {
+  width: 200px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.forButton {
+  width: 100%;
+  height: 1%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0%;
+  max-width: 90%;
+  max-height: 20%;
+  min-width: 50%;
+}
+
+.button-13 {
+  background-color: #008296;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  margin-left: 27px;
+  padding: 0 1px 0 11px;
+  position: relative;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.deletebtndiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 1px;
+}
+
+.deletebtn {
+  position: relative;
+  bottom: 22px;
+  left: 22px;
+}
+
+.card-blur {
+  background-color: #d0d1d36e;
+  position: relative;
+  height: 300px;
+  bottom: 285px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.blur-text {
+  height: 35px;
+  position: relative;
+  background-color: red;
+  color: white;
+  width: 200px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+  cursor: context-menu;
+}
+
+@media only screen and (max-width: 768px) {
+  .productcontainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

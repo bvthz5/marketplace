@@ -1,0 +1,154 @@
+.formdiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  box-shadow: 0 3px 7px rgb(0 0 0 / 30%);
+  width: 361px;
+  height: 450px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.close {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 150%;
+  font-weight: bold;
+  padding-left: 18rem;
+  cursor: pointer;
+}
+
+.boxinputtext {
+  background: none;
+  display: block;
+  text-align: left;
+  border: 2px solid #daeef7;
+  padding: 14px 5px;
+  width: 270px;
+  height: 36px;
+  outline: none;
+  color: #000000;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+
+.boxinputpassword {
+  background: none;
+  display: block;
+
+  margin-bottom: -24px;
+  padding-right: 32px;
+  text-align: left;
+  border: 2px solid #daeef7;
+  width: 270px;
+  height: 36px;
+  outline: none;
+  color: #000000;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+
+.backicon {
+  cursor: pointer;
+  align-items: left;
+  margin-right: 300px;
+  color: #1c045d;
+}
+
+.cart {
+  color: #000000;
+  cursor: pointer;
+}
+
+.forgot {
+  color: #000000;
+  cursor: pointer;
+  margin-top: 0px !important;
+}
+
+.carttitle {
+  color: #1c045d;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  min-height: 80px;
+}
+
+.login {
+  border: none;
+  outline: none;
+  background: #1c045d;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  display: block;
+  margin: 0 auto;
+  width: 270px;
+  height: 36px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-bottom: 5px;
+  min-height: 30px;
+}
+
+.signup {
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.loginclick {
+  color: #daeef7;
+  cursor: 'pointer';
+}
+
+.pswdbox {
+  padding: 14px 27px !important;
+  width: 238px !important;
+  margin: 0;
+}
+
+.eyebutton {
+  margin-left: 239px;
+  cursor: pointer;
+  position: relative;
+  bottom: 7px;
+}
+
+.iconwidth {
+  width: 18px;
+}
+.keyboardBackspaceIcon {
+  display: flex;
+  justify-content: flex-start;
+  width: 95%;
+  margin-top: 10px;
+  color: #1c045d;
+  min-height: 20px;
+}

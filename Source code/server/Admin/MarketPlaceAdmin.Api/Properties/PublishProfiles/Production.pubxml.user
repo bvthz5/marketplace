@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\snehil\Code\marketplace\Source code\server\MarketPlace.Api\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2022-12-28T05:38:56.5410554Z;True|2022-12-28T11:07:22.5868449+05:30;True|2022-12-28T10:52:47.4572115+05:30;True|2022-12-28T10:51:44.2511564+05:30;True|2022-12-28T10:48:39.4070284+05:30;True|2022-12-28T10:37:56.1290658+05:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

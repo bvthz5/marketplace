@@ -1,0 +1,195 @@
+.formdiv {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.backicon {
+  align-items: left;
+  margin-right: 400px;
+  margin-top: 10px;
+  color: #002f34;
+  cursor: pointer;
+}
+
+
+.boxregister {
+  margin-bottom: 20px;
+}
+
+.close {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 150%;
+  font-weight: bold;
+  padding-left: 18rem;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  height: auto;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+  background: none;
+  display: block;
+  margin: 2px auto;
+  text-align: center;
+  border: 2px solid #00a49f;
+  padding: 14px 10px;
+  width: 270px;
+  height: 10px;
+  outline: none;
+  color: #000000;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+
+.cart {
+  color: #000000;
+}
+
+.carttitle {
+  color: #002f34;
+  font-size: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80px;
+  margin-bottom: -30px;
+}
+
+.login {
+  border: none;
+  outline: none;
+  background: #002f34;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 36px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
+
+.signup {
+  color: #000000;
+}
+
+.select {
+  background: none;
+  display: block;
+  margin: 2px auto;
+  text-align: center;
+  border: 2px solid #00a49f;
+  width: 295px;
+  height: 40px;
+  outline: none;
+  color: #000000;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+
+.pswdbox {
+  padding: 14px 20px !important;
+  width: 250px !important;
+
+}
+
+.eyebutton {
+  position: relative;
+  bottom: 2%;
+  left: 38%;
+}
+
+.eyebuttons {
+  position: absolute;
+  bottom: -15px;
+  left: 53%;
+  width: 25px;
+  height: 45px;
+  color: #0f0f0f;
+}
+
+.register {
+  border: none;
+  outline: none;
+  background: #002f34;
+  font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 36px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.registerclick {
+  color: #00a49f;
+  cursor: pointer;
+}
+
+
+
+.modalcontainer {
+  position: fixed;
+  z-index: 999;
+  padding-top: 16%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(4, 4, 4, 0.4);
+}
+
+.modalbox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 38%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  width: 360px;
+  height: 230px;
+  background: #ffffff;
+}
+
+.modalclose {
+  color: rgb(0, 0, 0);
+  float: right;
+  font-size: 150%;
+  font-weight: bold;
+  padding-left: 18rem;
+  cursor: pointer;
+  margin-bottom: 10%;
+}

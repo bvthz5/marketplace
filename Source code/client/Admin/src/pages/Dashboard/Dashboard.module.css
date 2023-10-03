@@ -1,0 +1,19 @@
+.chartdiv {
+  width: 200px;
+}
+.report {
+  margin-left: 20px;
+  margin-bottom: 35px;
+  color: rgb(176, 176, 248);
+}
+.chartbox {
+  width: 100%;
+  border: 2px solid #c5c4c4aa;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.chartbox2 {
+  width: 1210px;
+  border: 2px solid #c5c4c4aa;
+  margin-top: 20px;
+}

@@ -1,0 +1,352 @@
+.pagecontainer {
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+}
+
+.contentwrapper {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 20px;
+}
+
+.leftsection {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    width: 60%;
+}
+
+.imageouter {
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imagediv {
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 35px;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+}
+
+.productimage {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    max-width: inherit;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.sliderContainer {
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+.detailcontainer {
+    margin-top: 20px;
+    margin-right: 5px;
+    border: 1px solid rgba(14, 4, 5, .2);
+    background-color: white;
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+}
+
+.productdetails {
+    margin: 20px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #2a5b63;
+    display: flex;
+    flex-direction: column;
+}
+
+.fontstyle {
+    overflow: hidden;
+    word-break: break-word;
+    margin-top: 8px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn {
+    border: 0;
+    color: white;
+    padding: 9px;
+    border-radius: 5px;
+    margin-top: 3px;
+    cursor: pointer;
+
+}
+
+.datepadding {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+
+
+.dateshow {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.date {
+    margin: 0;
+    margin-top: 22px;
+    color: #2a5b63;
+}
+
+
+.rightsection {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    width: 30%;
+}
+
+.dealerside {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricebox {
+    width: 100%;
+    background-color: white;
+    height: 115px;
+    border: 1px solid rgba(14, 4, 5, .2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+}
+
+.dealerbox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(14, 4, 5, .2);
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+
+}
+
+.dealerdetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+    color: #2a5b63;
+    margin: 15px;
+}
+
+.locationBox {
+    border: 1px solid rgba(14, 4, 5, .2);
+    background-color: white;
+    height: max-content;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 30%);
+    margin-top: 20px;
+}
+
+.locationDetails {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    min-height: 150px;
+}
+
+.locationBoxh2 {
+    color: #002f34;
+    margin: 5px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* image full screen  view */
+
+.container {
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
+    /* padding-top: 16%;  */
+    /* Location of the box */
+    left: 0;
+    /* border-radius: 2%; */
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100vh;
+    overflow: hidden;
+    /* Enable scroll if needed */
+    /* Fallback color */
+    background-color: rgb(4 4 4 / 90%);
+    /* Black w/ opacity */
+}
+
+.close {
+    color: rgb(255, 252, 252);
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: 2rem;
+    background: transparent;
+    border-color: transparent;
+    place-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+
+.fullscreen-imgouter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .contentwrapper {
+        flex-direction: column;
+        width: 95%;
+        gap: 0px;
+    }
+
+    .leftsection {
+        width: 100%;
+    }
+
+    .detailcontainer {
+        margin-bottom: 10px;
+    }
+
+    .rightsection {
+        width: 100%;
+        margin-bottom: 20px;
+        flex-direction: row;
+    }
+
+    .dealerside {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .dealerbox {
+        margin-top: 20px;
+        min-height: 160px;
+
+    }
+
+    .locationBox {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .detailcontainer {
+        margin-top: 20px;
+    }
+
+    .contentwrapper {
+        flex-direction: column;
+        width: 95%;
+        gap: 0px;
+    }
+
+    .leftsection {
+        width: 100%;
+    }
+
+    .rightsection {
+        width: 100%;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .dealerside {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .dealerbox {
+        margin-top: 20px;
+        min-height: 160px;
+
+    }
+
+    .locationBox {
+        margin-top: 20px;
+        margin-left: 0px;
+
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .contentwrapper {
+        padding-top: 45px;
+    }
+
+    .datepadding {
+        flex-direction: column;
+    }
+
+    .buttons {
+        justify-content: space-between;
+    }
+}

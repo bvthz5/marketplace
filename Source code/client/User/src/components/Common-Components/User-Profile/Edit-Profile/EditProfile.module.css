@@ -1,0 +1,112 @@
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+}
+
+.formrow {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+  width: 100%;
+  gap: 20px;
+}
+
+.form {
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.formfield {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.formaddressfield {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.span {
+  margin-left: 10px;
+}
+
+.required {
+  color: red;
+}
+
+
+.summaryinput {
+  width: 90%;
+  height: 30px;
+  padding: 5px 10px;
+  border: 1px solid #dadada;
+  color: rgb(1, 1, 1);
+  margin: 5px 5px;
+}
+
+.summarytextarea {
+  width: 95%;
+  height: 120px;
+  padding: 5px 10px;
+  border: 1px solid #dadada;
+  color: rgb(1, 1, 1);
+  margin: 5px 5px 5px 5px;
+  border-radius: 4px;
+}
+
+.addrssubmitdiv {
+  width: 100%;
+  justify-content:center;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.formbtnsubmit {
+  border: none;
+  outline: none;
+  background: #002f34;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  height: 38px;
+  border-radius: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0px 10px;
+
+}
+
+.formbtncancel {
+  border: none;
+  outline: none;
+  background-color: #ed3915;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  height: 38px;
+  border-radius: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+
+@media only screen and (max-width: 420px) {
+  .formrow {
+      flex-direction: column;
+  }
+
+  .formfield {
+      width: 100%;
+  }
+
+  .summarytextarea {
+      width: 90%;
+  }
+
+}
